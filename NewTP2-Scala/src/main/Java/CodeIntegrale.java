@@ -98,12 +98,8 @@ public class CodeIntegrale {
 
 
 
-    /*public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         //CreateJSONFile();
-
-        SparkSession spark = SparkSession.builder()
-                .appName("Java Spark SQL basic example")
-                .config("spark.master", "local")
-                .getOrCreate();
-    }*/
+        System.out.println("Cacahuete");
+    }
 }
