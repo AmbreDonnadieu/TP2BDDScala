@@ -11,6 +11,9 @@ object CodeScala extends App {
     val spark = SparkSession.builder.appName("Java Spark SQL basic example").config("spark.master", "local").getOrCreate
     val monsters = spark.read.json("C:/Users/Ambre/Desktop/TP2BDDScala/NewTP2-Scala/AllMonsterBestiary.json").toDF()
 
+    //val monsters = spark.read.json("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
+    val monsters = spark.read.json("C:\\Users\\aajin\\IdeaProjects\\TP2BDD\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
+
     //monsters.printSchema()
     //monsters.select(col("Name"), col("Sorts")).show();
     val test = monsters.printSchema()
