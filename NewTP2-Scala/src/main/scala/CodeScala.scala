@@ -31,13 +31,12 @@ object CodeScala extends App {
     //val result = splitMe.flatMap(v=> v._2.map(g => (v._1, g)))
 
     val preresult = monsters.collect()
-    val result = monsters.collect().flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => (v.getAs[String]("Name"), g)))
+    val result = monsters.collect().flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => ( g, v.getAs[String]("Name"))))
+
     val j =2+2
     print(j.toString())
-    //dataset = [Name:String, Sorts : Array<String>]
-    val df = monsters.toDF("Name", "Sorts")
-   // df.flatMap(v=> v._2.map(g => (v._1, g)))
-    val schem2 = println(test)
+
+
 
   }
 
