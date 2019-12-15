@@ -21,29 +21,14 @@ object CodeScala extends App {
     //monsters.select(col("Name"), col("Sorts")).show();
     //monsters.collect().foreach(println)
 
-
-
     //val splitMe = List( ("key1", List(1,2,3)), ("key2", List(4,5)) )
     //val result = splitMe.flatMap(v=> v._2.map(g => (v._1, g)))
 
-    //val preresult = monsters.collect()
-    //val result = monsters.collect().flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => ( g, v.getAs[String]("Name"))))
-    val result = monsters.flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => ( g, v.getAs[String]("Name"))))
-
-   /* val schema2 = StructType(
-      List(
-        StructField("Sort", StringType, true),
-        StructField("Nom", StringType, true)
-      )
-    )*/
+   val result = monsters.flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => ( g, v.getAs[String]("Name"))))
 
     val index = result.rdd.reduceByKey((acc, n) => (acc+" - "+n))
     index.collect().foreach(println)
-
-   /* val resultRDD = spark.createDataFrame(spark.sparkContext.parallelize(result))
-    resultRDD.withColumnRenamed("_1","Sort")
-    resultRDD.withColumnRenamed("_2","NomMonstre")
-    resultRDD.printSchema()*/
+    
 
     print("Cacahuete")
 
