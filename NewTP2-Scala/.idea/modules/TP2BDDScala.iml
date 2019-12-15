@@ -198,5 +198,6 @@
     <orderEntry type="library" name="sbt: com.carrotsearch:hppc:0.7.2:jar" level="project" />
     <orderEntry type="library" name="java-json" level="application" />
     <orderEntry type="library" name="jsoup-1.12.1" level="application" />
+    <orderEntry type="library" name="scala-sdk-2.11.12" level="application" />
   </component>
 </module>
