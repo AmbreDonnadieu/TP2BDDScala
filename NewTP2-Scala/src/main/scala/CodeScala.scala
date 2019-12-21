@@ -1,12 +1,6 @@
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.api.java.JavaRDD
-import org.apache.spark.sql.{Dataset, Row, SparkSession}
-import org.apache.spark.sql.functions.col
-import org.apache.spark.sql.{Encoder, Encoders}
+import org.apache.spark.sql.SparkSession
 
 import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
-import scala.util.parsing.json._
 
 
 object CodeScala extends App {
@@ -20,16 +14,11 @@ object CodeScala extends App {
 
     //monsters.printSchema()
     //monsters.select(col("Name"), col("Sorts")).show();
-    //monsters.collect().foreach(println)
-
-    //r1.collect().foreach(println)
-    //val splitMe = List( ("key1", List(1,2,3)), ("key2", List(4,5)) )
-    //val result = splitMe.flatMap(v=> v._2.map(g => (v._1, g)))
 
     val result = monsters.flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => ( g, v.getAs[String]("Name"))))
 
 
-    val index = result.rdd.reduceByKey((acc, n) => (acc+" - "+n))
+    val index = result.rdd.reduceByKey((acc, n) => acc+" - "+n)
     index.collect().foreach(println)
   }
 

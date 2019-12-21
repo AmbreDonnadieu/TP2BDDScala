@@ -1,4 +1,4 @@
 [debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/C:/Users/Ambre/Desktop/TP2BDDScala/NewTP2-Scala/"), "newtp2-scala")...
-[debug] Done updating ProjectRef(uri("file:/C:/Users/Ambre/Desktop/TP2BDDScala/NewTP2-Scala/"), "newtp2-scala")
+[debug] Updating ProjectRef(uri("file:/C:/Users/aajin/IdeaProjects/TP2BDD/TP2BDDScala/NewTP2-Scala/"), "newtp2-scala")...
+[debug] Done updating ProjectRef(uri("file:/C:/Users/aajin/IdeaProjects/TP2BDD/TP2BDDScala/NewTP2-Scala/"), "newtp2-scala")
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
