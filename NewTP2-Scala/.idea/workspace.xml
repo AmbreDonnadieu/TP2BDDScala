@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832949fa-287a-4c06-8dbf-ab85f7fc3d8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" afterDir="false" />
     </list>
@@ -36,10 +39,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.12.1.jar!/" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,7 +65,7 @@
   <component name="RunManager" selected="Application.CodeScala">
     <configuration name="CodeScala" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="CodeScala" />
-      <module name="TP2BDDScala" />
+      <module name="NewTP2-Scala" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,9 +109,14 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3152699131003" />
+        <entry key="$PROJECT_DIR$" value="3153374520024" />
         <entry key="$PROJECT_DIR$/build.sbt" value="956229653" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>
@@ -136,16 +145,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/CodeScala.scala</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

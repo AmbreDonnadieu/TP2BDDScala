@@ -1,6 +1,7 @@
 import org.apache.spark.sql.SparkSession
 
 import scala.collection.mutable
+import java.io.PrintWriter
 
 
 object CodeScala extends App {
@@ -9,8 +10,9 @@ object CodeScala extends App {
     val spark = SparkSession.builder.appName("Java Spark SQL basic example").config("spark.master", "local").getOrCreate()
     import spark.implicits._
 
-    val monsters = spark.read.json("C:\\Users\\aajin\\IdeaProjects\\TP2BDD\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
-    //val monsters = spark.read.json("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
+    //val monsters = spark.read.json("C:\\Users\\aajin\\IdeaProjects\\TP2BDD\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
+    val monsters = spark.read.json("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
+
     //monsters.printSchema()
     //monsters.select(col("Name"), col("Sorts")).show();
     //monsters.collect().foreach(println)
@@ -24,6 +26,13 @@ object CodeScala extends App {
 
     val index = result.rdd.reduceByKey((acc, n) => acc+" - "+n)
     index.collect().foreach(println)
+
+    //val miaou = index.coalesce(1).saveAsTextFile("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\RDD_Sort_Monstres.txt")
+    //println(miaou.toString())
+
+    new PrintWriter("RDDSort_Monstres.txt") {
+      write(index.collect().foreach().);
+      close }
   }
 
   override def main(args: Array[String]) {
