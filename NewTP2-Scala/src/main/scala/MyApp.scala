@@ -2,6 +2,7 @@ import org.apache.spark.sql.SparkSession
 
 import scala.collection.mutable
 import swing.{BoxPanel, _}
+
 import org.apache.spark.rdd.RDD
 
 //import CodeScala

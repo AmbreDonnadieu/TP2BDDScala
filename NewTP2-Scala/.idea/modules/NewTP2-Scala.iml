@@ -12,7 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: aopalliance:aopalliance:1.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-swing_2.11:1.0.1:jar" level="project" />
     <orderEntry type="module-library">
       <library name="sbt: unmanaged-sources-and-docs">
         <CLASSES />
@@ -196,6 +195,7 @@
     <orderEntry type="library" name="sbt: com.clearspring.analytics:stream:2.7.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.chuusai:shapeless_2.11:2.3.2:jar" level="project" />
     <orderEntry type="library" name="sbt: com.carrotsearch:hppc:0.7.2:jar" level="project" />
-    <orderEntry type="library" name="java-json2" level="application" />
+    <orderEntry type="library" name="java-json" level="application" />
+    <orderEntry type="library" name="jsoup-1.12.1" level="application" />
   </component>
 </module>

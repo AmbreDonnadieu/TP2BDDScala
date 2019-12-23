@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832949fa-287a-4c06-8dbf-ab85f7fc3d8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/BarbarianOrc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/BrutalWarlord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/Des.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/Equipement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/EquipementCac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/EquipementDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/OrcWorgRider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/Personnage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/SolarAngel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_swing_2_11_1_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MyApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MyApp.scala" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,25 +91,46 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.12.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scala-swing.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.48267898" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ambre\Desktop\TP2BDDScala\NewTP2-Scala\src\main\Java\Combat" />
+      <recent name="C:\Users\Ambre\Desktop\TP2BDDScala\NewTP2-Scala\src\main\Combat" />
       <recent name="C:\Users\Ambre\Desktop\TP2BDDScala\NewTP2-Scala" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyApp">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.FightMain">
     <configuration name="CodeScala" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="CodeScala" />
+      <module name="NewTP2-Scala" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FightMain" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Combat.FightMain" />
       <module name="NewTP2-Scala" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,16 +143,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyApp" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="MyApp" />
-      <module name="NewTP2-Scala" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.JavaApp" />
-      <item itemvalue="Application.MyApp" />
+      <item itemvalue="Application.FightMain" />
       <item itemvalue="Application.CodeScala" />
     </list>
   </component>
@@ -147,21 +176,15 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3154141695665" />
         <entry key="$PROJECT_DIR$/build.sbt" value="1558357088" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
       </map>
     </option>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
     </option>
   </component>
   <component name="SvnConfiguration">
