@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832949fa-287a-4c06-8dbf-ab85f7fc3d8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/CodeIntegrale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/CodeIntegrale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,8 +176,16 @@
       <updated>1576347992891</updated>
       <workItem from="1577082928488" duration="694000" />
       <workItem from="1577085945546" duration="364000" />
-      <workItem from="1577086336455" duration="8397000" />
+      <workItem from="1577086336455" duration="8720000" />
     </task>
+    <task id="LOCAL-00001" summary="Interface de visualisation uniquement">
+      <created>1577097633097</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577097633097</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +203,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Interface de visualisation uniquement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface de visualisation uniquement" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="33" key="#CodeScala" timestamp="1577086161800">
@@ -230,26 +237,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="534" y="257" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1577091130695" />
+    <state x="261" y="0" key="CommitChangelistDialog2" timestamp="1577097630503">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="261" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1577097630503" />
     <state x="412" y="109" key="FileChooserDialogImpl" timestamp="1577086547117">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577086547117" />
-    <state width="1323" height="239" key="GridCell.Tab.0.bottom" timestamp="1577097562699">
+    <state width="1323" height="239" key="GridCell.Tab.0.bottom" timestamp="1577097635586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1577097562699" />
-    <state width="1323" height="239" key="GridCell.Tab.0.center" timestamp="1577097562699">
+    <state width="1323" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
+    <state width="1323" height="239" key="GridCell.Tab.0.center" timestamp="1577097635586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1577097562699" />
-    <state width="1323" height="239" key="GridCell.Tab.0.left" timestamp="1577097562699">
+    <state width="1323" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
+    <state width="1323" height="239" key="GridCell.Tab.0.left" timestamp="1577097635586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1577097562699" />
-    <state width="1323" height="239" key="GridCell.Tab.0.right" timestamp="1577097562699">
+    <state width="1323" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
+    <state width="1323" height="239" key="GridCell.Tab.0.right" timestamp="1577097635586">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1577097562699" />
+    <state width="1323" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
     <state x="129" y="61" key="MergeDialog" timestamp="1577091117949">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -266,14 +277,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1577095771687" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1577097719528">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1577097719528" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1577097729036">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1366.728@0.0.1366.728" timestamp="1577097729036" />
     <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1577086354899">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577086354899" />
-    <state x="494" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577091016639">
+    <state x="494" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577097666072">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="494" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1577091016639" />
+    <state x="494" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1577097666072" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1577091462783">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
