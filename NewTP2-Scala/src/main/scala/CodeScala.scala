@@ -20,10 +20,7 @@ object CodeScala extends App {
 
     val dataframe = index.toDF()
     dataframe.write.json("Sorts_Monstres.json")
-    val test = spark.read.json("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\Sorts_Monstres.json\\part-00000-7a6e68c2-48cf-4f0f-b666-b4c96b676ad6-c000.json")
-    test.toDF().collect().foreach(println)
-    val miaou = index.coalesce(1).saveAsTextFile("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\RDD_Sort_Monstres.txt")
-    ///test.printSchema()
+
 
   }
 

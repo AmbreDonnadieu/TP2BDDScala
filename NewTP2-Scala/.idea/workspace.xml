@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832949fa-287a-4c06-8dbf-ab85f7fc3d8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/BarbarianOrc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/BrutalWarlord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/Des.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/Equipement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/EquipementCac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/EquipementDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/OrcWorgRider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/Personnage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Combat/SolarAngel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_swing_2_11_1_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/MyApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MyApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +162,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3154141695665" />
+        <entry key="$PROJECT_DIR$" value="3154142047218" />
         <entry key="$PROJECT_DIR$/build.sbt" value="1558357088" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
       </map>
