@@ -229,6 +229,5 @@ public class CodeIntegrale {
 
     public static void main(String[] args) throws IOException {
         CreateJSONFile();
-        System.out.println("Cacahuete");
     }
 }
