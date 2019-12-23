@@ -1,14 +1,19 @@
 import org.apache.spark.sql.SparkSession;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+import spire.algebra.Bool;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
-
+import java.sql.*;
 
 public class CodeIntegrale {
 
@@ -95,6 +100,132 @@ public class CodeIntegrale {
 
         }
     }
+
+    private static Connection connect(String fileName) {
+        //String url = "jdbc:sqlite:C:/Users/aajin/IdeaProjects/BD1/sqlite/db/" + fileName;
+        String url = "jdbc:sqlite:" + fileName;
+
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(url);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return conn;
+    }
+
+    private static void createDatabase(String fileName){
+        //String url = "jdbc:sqlite:C:/Users/aajin/IdeaProjects/BD1/sqlite/db/" + fileName;
+        String url = "jdbc:sqlite:" + fileName;
+
+        try (Connection conn = DriverManager.getConnection(url)) {
+            if (conn != null) {
+                DatabaseMetaData meta = conn.getMetaData();
+                System.out.println("The driver name is " + meta.getDriverName());
+                System.out.println("A new database has been created.");
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Crée la table "spells" dans la base de données
+     */
+    private static void createTable(String NomDB, String NomTable) {
+        String url = "jdbc:sqlite:"+NomDB+".db";
+        String sql = "CREATE TABLE IF NOT EXISTS "+ NomTable +" (\n"
+                + "    name text PRIMARY KEY,\n"
+                + "    components text NOT NULL,\n"
+                + "    school text NOT NULL,\n"
+                + "    spell_resistance text NOT NULL,\n"
+                + "    range_area text NOT NULL,\n"
+                + "    level text NOT NULL,\n"
+                + "    effect text NOT NULL,\n"
+                + "    casting_time text NOT NULL,\n"
+                + "    saving_throw text NOT NULL\n"
+                + ");";
+
+        try (Connection conn = DriverManager.getConnection(url);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("table créée");
+        } catch (SQLException e) {
+            System.out.println("Error : " + e.getMessage());
+        }
+    }
+
+    /**
+     * Supprime la table "spells" de la base de données
+     */
+    private static void deleteTable(){
+        String url = "jdbc:sqlite:test.db";
+        String sql = "Drop Table spells";
+        try (Connection conn = DriverManager.getConnection(url);
+             Statement stmt = conn.createStatement()) {
+            // create a new table
+            stmt.execute(sql);
+            System.out.println("table supprimée");
+        } catch (SQLException e) {
+            System.out.println("Error : " + e.getMessage());
+        }
+    }
+
+    private static void insert(String name, List<String> comp, String school, Boolean spellres, String range, Integer level, String effect, String castTime, String savingThrow) {
+        String sql = "INSERT INTO spells(name,components,school,spell_resistance,range_area,level,effect,casting_time,saving_throw) VALUES(?,?,?,?,?,?,?,?,?)";
+
+        try (Connection conn = connect("test.db");
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, name);
+            pstmt.setObject(2, comp);
+            pstmt.setString(3, school);
+            pstmt.setBoolean(4, spellres);
+            pstmt.setString(5, range);
+            pstmt.setInt(6, level);
+            pstmt.setString(7, effect);
+            pstmt.setString(8, castTime);
+            pstmt.setString(9, savingThrow);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    /**
+     * Insère les sorts de mage dans la base de données SQLite
+     */
+    private  static void exportToSqlite() throws IOException, JSONException {
+        String content = new String(Files.readAllBytes(Paths.get("Sorts.json")));
+        JSONArray AllSorts = new JSONArray(content);
+        for (int i = 0; i < AllSorts.length(); i++) {
+            JSONObject obj = (JSONObject) AllSorts.get(i);
+
+            List<String> compo = new ArrayList<>();
+            for (int j = 0; j < obj.getJSONArray("Components").length(); j++) {
+                compo.add(obj.getJSONArray("Components").get(j).toString());
+            }
+
+            String nom_sort = obj.getString("Name");
+            List<String> Components = compo;
+            String school = obj.getString("School");
+            Boolean Spell_Resistance = obj.getBoolean("Spell_Resitance");
+            String Range_area = obj.getString("Range_Area");
+            Integer Level = obj.getInt("Level");
+            String Effect = obj.getString("Effect");
+            String Casting_Time = obj.getString("Casting_Time");
+            String Saving_Throw = obj.getString("Saving_Throw");
+
+
+        //Insertion dans la BD SQLite
+            insert(nom_sort,Components,school,Spell_Resistance,Range_area,Level,Effect,Casting_Time,Saving_Throw);
+
+            System.out.println("finish");
+
+        }
+    }
+
+
 
     public static void main(String[] args) throws IOException {
         CreateJSONFile();
