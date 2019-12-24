@@ -111,8 +111,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="java-json" level="application" />
-    <orderEntry type="library" name="jsoup-1.12.1" level="application" />
+    <orderEntry type="library" name="java-json3" level="application" />
   </component>
   <component name="SbtModule">
     <option name="buildForURI" value="file:/$MODULE_DIR$/../../" />

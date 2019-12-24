@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832949fa-287a-4c06-8dbf-ab85f7fc3d8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CodeScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/BDD_TP2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/BDD_TP2/java-json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/BDD_TP2/jsoup-1.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/BDD_TP2/mongo-java-driver-3.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/BDD_TP2/src/CodeIntegrale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/java-json.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/jsoup-1.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/mongo-java-driver-3.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/BarbarianOrc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/BrutalWarlord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/Des.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/Equipement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/EquipementCac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/EquipementDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/FightMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/OrcWorgRider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/Personnage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet2/src/SolarAngel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/NewTP2-Scala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/MyApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/MyApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,49 +98,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scala-swing.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsoup-1.12.1.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
-    <property name="project.structure.side.proportion" value="0.48267898" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ambre\Desktop\TP2BDDScala\NewTP2-Scala\src\main\Java\Combat" />
-      <recent name="C:\Users\Ambre\Desktop\TP2BDDScala\NewTP2-Scala\src\main\Combat" />
       <recent name="C:\Users\Ambre\Desktop\TP2BDDScala\NewTP2-Scala" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.FightMain">
+  <component name="RunManager" selected="Application.MyApp">
     <configuration name="CodeScala" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="CodeScala" />
-      <module name="NewTP2-Scala" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FightMain" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Combat.FightMain" />
       <module name="NewTP2-Scala" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,9 +133,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyApp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="MyApp" />
+      <module name="NewTP2-Scala" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.JavaApp" />
-      <item itemvalue="Application.FightMain" />
+      <item itemvalue="Application.MyApp" />
       <item itemvalue="Application.CodeScala" />
     </list>
   </component>
@@ -162,15 +173,22 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3154142047218" />
+        <entry key="$PROJECT_DIR$" value="3153484457600" />
         <entry key="$PROJECT_DIR$/build.sbt" value="1558357088" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
       </map>
     </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-      </map>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -185,7 +203,10 @@
       <updated>1576347992891</updated>
       <workItem from="1577082928488" duration="694000" />
       <workItem from="1577085945546" duration="364000" />
-      <workItem from="1577086336455" duration="8720000" />
+      <workItem from="1577086336455" duration="9017000" />
+      <workItem from="1577098377532" duration="413000" />
+      <workItem from="1577131855049" duration="395000" />
+      <workItem from="1577132278043" duration="15185000" />
     </task>
     <task id="LOCAL-00001" summary="Interface de visualisation uniquement">
       <created>1577097633097</created>
@@ -194,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577097633097</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test interface graphique">
+      <created>1577097961769</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577097961769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +243,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Interface de visualisation uniquement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface de visualisation uniquement" />
+    <MESSAGE value="Test interface graphique" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test interface graphique" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="33" key="#CodeScala" timestamp="1577086161800">
@@ -242,34 +271,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="315" y="57" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1577086191488" />
-    <state x="534" y="257" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577091130695">
+    <state x="534" y="257" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577131879533">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="534" y="257" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1577091130695" />
-    <state x="261" y="0" key="CommitChangelistDialog2" timestamp="1577097630503">
+    <state x="534" y="257" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1577131879533" />
+    <state x="261" y="0" key="CommitChangelistDialog2" timestamp="1577097959668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="261" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1577097630503" />
-    <state x="412" y="109" key="FileChooserDialogImpl" timestamp="1577086547117">
+    <state x="261" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1577097959668" />
+    <state x="412" y="109" key="FileChooserDialogImpl" timestamp="1577132351003">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="412" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577086547117" />
-    <state width="1323" height="239" key="GridCell.Tab.0.bottom" timestamp="1577097635586">
+    <state x="412" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577132351003" />
+    <state width="1323" height="105" key="GridCell.Tab.0.bottom" timestamp="1577169042900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
-    <state width="1323" height="239" key="GridCell.Tab.0.center" timestamp="1577097635586">
+    <state width="1323" height="105" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1577169042900" />
+    <state width="1323" height="105" key="GridCell.Tab.0.center" timestamp="1577169042900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
-    <state width="1323" height="239" key="GridCell.Tab.0.left" timestamp="1577097635586">
+    <state width="1323" height="105" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1577169042900" />
+    <state width="1323" height="105" key="GridCell.Tab.0.left" timestamp="1577169042900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
-    <state width="1323" height="239" key="GridCell.Tab.0.right" timestamp="1577097635586">
+    <state width="1323" height="105" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1577169042900" />
+    <state width="1323" height="105" key="GridCell.Tab.0.right" timestamp="1577169042900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1577097635586" />
+    <state width="1323" height="105" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1577169042900" />
     <state x="129" y="61" key="MergeDialog" timestamp="1577091117949">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -278,26 +307,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="395" y="82" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1577091123279" />
-    <state x="186" y="0" key="SettingsEditor" timestamp="1577086550732">
+    <state x="186" y="0" key="SettingsEditor" timestamp="1577132356185">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1577086550732" />
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1577132356185" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1577095771687">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1577095771687" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1577097719528">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1577097969892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1577097719528" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1577097969892" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1577097729036">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1366.728@0.0.1366.728" timestamp="1577097729036" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1577086354899">
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1577132285180">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577086354899" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577132285180" />
     <state x="494" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577097666072">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
