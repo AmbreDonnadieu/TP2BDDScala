@@ -1,19 +1,17 @@
-import org.apache.spark.sql.SparkSession;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
-import spire.algebra.Bool;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.*;
 
 public class CodeIntegrale {
 
@@ -97,7 +95,7 @@ public class CodeIntegrale {
 
 
         } catch (IOException e) {
-
+            System.out.println(e.getMessage());
         }
     }
 

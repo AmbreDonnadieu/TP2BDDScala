@@ -1,34 +1,21 @@
-import java.awt.FlowLayout
-
+import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 
 import scala.collection.mutable
-import swing.{BoxPanel, _}
-import org.apache.spark.rdd.RDD
-
-import scala.swing.Table.AutoResizeMode
-import scala.swing.event.ButtonClicked
-
-//import CodeScala
+import scala.swing.event.{ButtonClicked, TableRowsSelected}
+import scala.swing.{BoxPanel, _}
 
 object MyApp extends SimpleSwingApplication {
 
-  val myButton = new Button("Click here")
-  val spark = SparkSession.builder.appName("Java Spark SQL basic example").config("spark.master", "local").getOrCreate()
-  import spark.implicits._
+  val spark: SparkSession = SparkSession.builder.appName("Java Spark SQL basic example").config("spark.master", "local").getOrCreate()
 
-  //IMPORTANT : préciser le chemin de son fichier "AllMonsterBestiary.json" (généré dans CodeIntegrale)
-  val monsters = spark.read.json("C:\\Users\\aajin\\IdeaProjects\\TP2BDD\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
-  //val monsters = spark.read.json("C:\\Users\\Ambre\\Desktop\\TP2BDDScala\\NewTP2-Scala\\AllMonsterBestiary.json")
-
-  val result = monsters.flatMap(v => v.getAs[mutable.WrappedArray[String]]("Sorts").map(g => ( g, v.getAs[String]("Name"))))
-  val index = result.rdd.reduceByKey((acc, n) => acc+" ; "+n)
+  val index: RDD[(String, String)] = CodeScala.EXO1_RDD()
 
   //traitement pour l'affichage
   val arrayIndex:RDD[Array[Any]] =  index.map(x => Array(x._1,x._2))
-  val model = arrayIndex.collect().toList.toArray
+  val model: Array[Array[Any]] = arrayIndex.collect().toList.toArray
 
-//La fonction qui filtre selon le nom du sort
+  //La fonction qui filtre selon le nom du sort
   def filterSpell(spellName : String):Array[Array[Any]]={
     val filteredIndex =  index.filter(x => x._1.contains(spellName))
     val arrayFilteredIndex:RDD[Array[Any]] = filteredIndex.map(x => Array(x._1,x._2))
@@ -44,9 +31,9 @@ object MyApp extends SimpleSwingApplication {
   }
 
   //Le conteneur
-  lazy val ui = new BoxPanel(Orientation.Vertical){
+  lazy val ui: BoxPanel = new BoxPanel(Orientation.Vertical){
     //L'affichage du tableau
-    var table = new Table(model, Seq("Spell","Monsters")){
+    var table: Table = new Table(model, Seq("Spell","Monsters")){
       preferredViewportSize = new Dimension(700, 600)
     }
     var tablePanel = new ScrollPane(table)
@@ -56,7 +43,7 @@ object MyApp extends SimpleSwingApplication {
     //La recherche de sort
     contents+= new FlowPanel(){
       val sLabel = new Label("Spell name : ")
-      val spellSearchField = new TextField(""){
+      val spellSearchField: TextField = new TextField(""){
         preferredSize = new Dimension(100,20)
       }
       val searchSpellButton = new Button("Search")
@@ -65,13 +52,18 @@ object MyApp extends SimpleSwingApplication {
       contents+=searchSpellButton
       listenTo(searchSpellButton)
       reactions += {
-        case ButtonClicked(searchSpellButton) => tablePanel.contents = new Table(filterSpell(spellSearchField.text),Seq("Spell","Monsters"))
+        case ButtonClicked(searchSpellButton) => table = new Table(filterSpell(spellSearchField.text), Seq("Spell","Monsters"))
+          listenTo(table.selection)
+          reactions+={
+            case TableRowsSelected(source,range,false) => println("Sort : " + table.apply(table.selection.rows.leadIndex,0) + "\t Monstres : " + table.apply(table.selection.rows.leadIndex,1))
+          }
+        tablePanel.contents = table
       }
     }
     //La recherche de monstre
     contents+= new FlowPanel(){
       val mLabel = new Label("Monster name : ")
-      val monsterSearchField = new TextField(""){
+      val monsterSearchField: TextField = new TextField(""){
         preferredSize = new Dimension(100,20)
       }
       val searchMonsterButton = new Button("Search")
@@ -80,8 +72,14 @@ object MyApp extends SimpleSwingApplication {
       contents+=searchMonsterButton
       listenTo(searchMonsterButton)
       reactions += {
-        case ButtonClicked(searchMonsterButton) => tablePanel.contents = new Table(filterMonster(monsterSearchField.text), Seq("Spell", "Monsters"))
+        case ButtonClicked(searchMonsterButton) => table = new Table(filterMonster(monsterSearchField.text), Seq("Spell", "Monsters"))
+          listenTo(table.selection)
+          reactions+={
+            case TableRowsSelected(source,range,false) => println("Sort : " + table.apply(table.selection.rows.leadIndex,0) + "\t Monstres : " + table.apply(table.selection.rows.leadIndex,1))
+          }
+          tablePanel.contents = table
       }
+
     }
     //Le bouton reset
     contents+=new FlowPanel(){
@@ -89,16 +87,28 @@ object MyApp extends SimpleSwingApplication {
       contents+=resetButton
       listenTo(resetButton)
       reactions+={
-        case ButtonClicked(searchSpellButton) => tablePanel.contents = new Table(model, Seq("Spell","Monsters"))
+        case ButtonClicked(searchSpellButton) => table = new Table(model, Seq("Spell","Monsters"))
+          listenTo(table.selection)
+          reactions+={
+            case TableRowsSelected(source,range,false) => println("Sort : " + table.apply(table.selection.rows.leadIndex,0) + "\t Monstres : " + table.apply(table.selection.rows.leadIndex,1))
+          }
+          tablePanel.contents = table
       }
+    }
+
+    //affiche les données de la ligne sur laquelle on clique
+    listenTo(table.selection)
+    reactions+={
+      case TableRowsSelected(source,range,false) => println("Sort : " + table.apply(table.selection.rows.leadIndex,0) + "\t Monstres : " + table.apply(table.selection.rows.leadIndex,1))
     }
   }
 
 
 
-  def top = new MainFrame {
+  def top: MainFrame = new MainFrame {
     title = "Spells database"
     contents = ui
+    size = new Dimension(1000,600)
     maximize()
   }
 
